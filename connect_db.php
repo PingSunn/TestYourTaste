@@ -22,3 +22,15 @@ function disconnectDb($conn) {
     $conn->close();
 }
 ?>
+<!-- 
+<?php 
+    $conn = connectDb(); 
+    $sql1 = "SELECT * FROM questions";
+    $resultQuestion = $conn->query($sql1);
+    if ($resultQuestion->num_rows > 0) {
+        $questionLoop = $resultQuestion->fetch_assoc();
+        echo $questionLoop["id"] . ". " . $questionLoop["question_text"];
+    }
+    disconnectDb($conn);
+
+?> -->
