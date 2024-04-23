@@ -1,0 +1,55 @@
+<?php require_once ('connect_db.php'); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-cover bg-center h-screen" style="background-image: url('img/bg.jpg');">
+        <div class="flex justify-center items-center h-screen">
+            <div class="bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6">
+
+                <div>
+                    <div class="flex justify-center">
+                        <h1 class="question"> <span class="font-bold"><?php ?>. </span> คำถาม คำถามคำถาม</h1>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <input type="radio" id="choiceQ<?php ?>" name="answerQ<?php ?>">
+                                <label for="choiceQ<?php ?>"> AAAAAAA </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="choiceQ<?php ?>" name="answerQ<?php ?>">
+                                <label for="choiceQ<?php ?>"> BBBBBBBB </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="choiceQ<?php ?>" name="answerQ<?php ?>">
+                                <label for="choiceQ<?php ?>"> CCCCCCC </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="choiceQ<?php ?>" name="answerQ<?php ?>">
+                                <label for="choiceQ<?php ?>"> DDDDDDDD </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

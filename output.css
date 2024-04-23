@@ -558,6 +558,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-5\/6 {
   height: 83.333333%;
 }
@@ -570,12 +574,20 @@ video {
   width: 80%;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-3xl {
@@ -597,6 +609,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .shadow-2xl {
