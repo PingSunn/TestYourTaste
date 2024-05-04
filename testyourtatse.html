@@ -1,59 +1,37 @@
-<?php require_once ('connect_db.php'); ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Test your tatse</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
 
-    <div class="bg-cover bg-center h-screen" style="background-image: url('img/bg.jpg');">
-        <div class="flex justify-center items-center h-screen">
-            <div class="flex justify-center bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6">
-                <div class="w-4/6 py-5">
-                    <div class="bglack w-full h-3"></div>
-                    <div>
-                        <div class="flex justify-center">
-                            <h1 class="question mb-5"> <span class="font-bold"></span>คำถาม Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae provident assumenda rem, amet, velit quidem nam ut, porro id fuga commodi quae recusandae quam delectus? Sit maiores
-                                delectus aut.</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <div class="grid grid-cols-2 gap-2 text-center">
-
-                                <div class="border rounded-tl-xl border-gray-300 hover:bg-gray-300">
-                                    <!-- Add border to the bottom -->
-                                    <input class="opacity-0 absolute" type="radio" id="choiceQ1" name="answerQ">
-                                    <!-- Make radio button invisible -->
-                                    <label class="block py-2 px-10 text-md font-medium " for="choiceQ1"> AAAAAAAAAAA </label>
-                                    <!-- Adjust label position and cursor style -->
-                                </div>
-                                <div class="border rounded-tr-xl border-gray-300 hover:bg-gray-300">
-                                    <input class="opacity-0 absolute" type="radio" id="choiceQ2" name="answerQ">
-                                    <label class="block py-2 px-10 text-md font-medium " for="choiceQ2"> B </label>
-                                </div>
-                                <div class="border rounded-bl-xl border-gray-300 hover:bg-gray-300">
-                                    <input class="opacity-0 absolute" type="radio" id="choiceQ3" name="answerQ">
-                                    <label class="block py-2 px-10 text-md font-medium " for="choiceQ3"> C </label>
-                                </div>
-                                <div class="border rounded-br-xl border-gray-300 hover:bg-gray-300">
-                                    <input class="opacity-0 absolute" type="radio" id="choiceQ4" name="answerQ">
-                                    <label class="block py-2 px-10 text-md font-medium " for="choiceQ4"> D </label>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                    </div>
+    <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('img/bg1.jpg');">
+        <div class="backdrop-blur-sm flex justify-center items-center h-screen">
+            <a href="#exam" class="font-pacifico text-5xl hover:text-6xl hover:text-white">Test Your Tatse</a>
+        </div>
+    </div>
+    <div class="flex justify-center items-center h-screen bg-gray-200" id="exam">
+        <div class="flex justify-center bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6">
+            <div class="w-4/6 py-5 overflow-y-scroll no-scrollbar">
+                <div class="bg-black w-full text-center">
+                    <h1 class="">Test Your Tatse!!</h1>
                 </div>
+
+                <div class="structure text-center text-wrap relative">
+
+                </div>
+
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

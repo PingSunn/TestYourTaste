@@ -13,8 +13,8 @@
 <body>
 
     <div class="bg-cover bg-center h-screen" style="background-image: url('img/bg.jpg');">
-        <div class="flex justify-center items-center h-screen">
-            <div class="bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6">
+        <div class="flex justify-center items-center h-full">
+            <div class="bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6 overflow-y-scroll">
                 <?php
                     $conn = connectDb(); 
                     $sql1 = "SELECT * FROM questions";

@@ -273,4 +273,4 @@ const choices = {
 const result = {
 
 }
-console.log(choices[1][1])
+console.log(choices[1][1].text + " : " + choices[1][1].value)
