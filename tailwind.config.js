@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./*.{html,js,php}"],
+    content: ['./html/*.html',
+        './js/*.js'
+    ],
     theme: {
         extend: {
             fontFamily: {
                 "anuphan": ["Anuphan", "sans-serif"],
                 "pacifico": ["Pacifico", "cursive"],
+                "MadimiOne": ["Madimi One", "sans-serif"],
             },
         },
         // colors: {
