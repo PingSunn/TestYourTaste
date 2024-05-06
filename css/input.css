@@ -11,3 +11,11 @@
     color: white;
     text-shadow: 5px -2px 1px black;
 }
+
+.swal-text {
+    font-family: "Anuphan", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: large;
+}

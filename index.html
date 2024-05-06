@@ -5,19 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test your taste</title>
-    <link href="../css/output.css" rel="stylesheet">
-    <script src="../js/data.js"></script>
-    <script src="../js/script.js"></script>
+    <link href="./css/output.css" rel="stylesheet">
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Sweeralert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
 <body>
-
-    <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('../asset/img/bg1.jpg');">
-        <div class="backdrop-blur-sm flex justify-center items-center h-screen">
-            <a href="#exam" class="font-pacifico text-5xl  hl-header hover:text-6xl">Test Your Taste</a>
+    <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('./asset/img/bg1.jpg');">
+        <div class="backdrop-blur-sm flex flex-col justify-center items-center h-screen">
+            <a href="#exam" class="font-pacifico text-5xl  hl-header hover:text-6xl"><span class="brandText"></span></a>
+            <!-- <p class="font-MadimiOne mt-5">click to start</p> -->
         </div>
     </div>
+
+    <script>
+        var typed = new Typed('.brandText', {
+            strings: ['Test Your Taste'],
+            typeSpeed: 100,
+            loop: true,
+            backDelay: 3000,
+            showCursor: false
+        });
+    </script>
 
     <div class="h-screen flex justify-center items-center bg-gray-200" id="exam">
         <div class="flex justify-center flex-col items-center bg-white shadow-2xl rounded-3xl p-6 md:w-4/5 xl:w-3/5 h-5/6">
@@ -39,9 +56,6 @@
                             </div>
                         </label> 
                         Another 3 chioceee -->
-
-
-
                 </div>
 
                 <div class="my-3 flex justify-center">
@@ -50,7 +64,6 @@
                         Wanna get a drink?
                     </button>
                 </div>
-
 
             </div>
 

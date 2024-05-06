@@ -71,9 +71,7 @@ function progressBar() {
     
     // Update the width of the progress bar
     barId.style.width = progress + "%";
-    
 }
-
 
 function show() {
     // Get all radio button groups
@@ -105,16 +103,22 @@ function show() {
                 sum += parseInt(radio.value);
             }
         });
-        console.log("sum: " + sum);
+        // console.log("sum: " + sum);
         
         warp(sum);
     } else {
-        // Display a message or perform any other action if any group has no selection
-        alert("Please select an answer for all questions.");
+        // alert("Please select an answer for all questions.");
+        sweetAlert({
+            text: "เลือกตัวเลือกไม่ครบ ลองดูใหม่อีกที",
+            icon: "error",
+            buttons: false,
+            timer: 3000,
+          });
+
         document.getElementById('calculateBtn').textContent = 'Hit Me Again!';
     }
 }
 
 function warp(sum) {
-    window.location.href = "/Website_YourType/html/result.html?value=" + sum;
+    window.location.href = "/Website_YourType/result.html?value=" + sum;
 }
