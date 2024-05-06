@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link href="./output.css" rel="stylesheet">
+    <title>Test your taste</title>
+    <link href="../css/output.css" rel="stylesheet">
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+
 </head>
 
 <body>
 
-    <div class="bg-cover bg-center h-screen" style="background-image: url('img/bg.jpg');">
-        <div class="flex justify-center items-center h-screen">
-            <div class="bg-white shadow-2xl rounded-3xl p-6 w-4/5 h-5/6">
-                <!-- Content of the box goes here -->
-            </div>
+    <div class="w-full h-screen bg-no-repeat bg-center bg-cover bg-fixed" style="background-image: url('../asset/img/bg1.jpg');">
+        <div class="backdrop-blur-sm flex justify-center items-center h-screen">
+            <a href="#exam" class="font-pacifico text-5xl  hl-header hover:text-6xl">Test Your Taste</a>
         </div>
+    </div>
+
+    <div class="h-screen flex justify-center items-center bg-gray-200" id="exam">
+        <div class="flex justify-center flex-col items-center bg-white shadow-2xl rounded-3xl p-6 md:w-4/5 xl:w-3/5 h-5/6">
+            <div class="w-4/6 py-5 overflow-y-scroll no-scrollbar" id="exam-area">
+
+                <div class="w-full text-center">
+                    <p class="font-anuphan text-3xl font-bold">ลองตอบคำถามเหล่านี้ แล้วมาดูผลลัพธ์กัน !</p>
+                </div>
+
+                <div class="structure text-center text-wrap relative font-anuphan">
+                    <!-- <div>
+                        <h1 class="question py-5 px-2 text-lg font-semibold"><span class="font-bold"></span>คุณกำลังเดินอยู่ในป่าและเจอสัตว์ป่าขนาดใหญ่กำลังจะเข้าใกล้คุณ คุณจะกระทำอย่างไร?</h1>
+                    </div>
+                    <div class="grid grid-cols-2 gap-1 place-items-center text-center px-10">
+                        <label class="px-4 group">
+                            <input type="radio" class="peer sr-only" name="pricing" value="1"" />
+                            <div class="max-w-xl rounded-md  p-4  ring-1 ring-transparent transition-all hover:shadow-xl peer-checked:text-sky-600 peer-checked:ring-blue-400 peer-checked:ring-offset-2">
+                                ให้เห็นว่าคุณเป็นเพื่อนแกะและร้องเสียงเหมือนแกะ
+                            </div>
+                        </label> 
+                        Another 3 chioceee -->
 
 
 
+                </div>
+
+                <div class="my-3 flex justify-center">
+                    <button id="calculateBtn" type="submit" class="relative tracking-wide text-white bg-gradient-to-r from-[#a86138] to-[#8b4927] font-MadimiOne hover:text-lg hover:shadow-xl hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-5 py-2.5 text-center focus"
+                        onclick="show()">
+                        Wanna get a drink?
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="w-full bg-[#dabda4] rounded-full h-3 mt-2">
+                <div class="bg-[#ab7a5b] h-3 rounded-full" id="rangeProgressBar"></div>
+            </div>
+
+        </div>
     </div>
 
 
